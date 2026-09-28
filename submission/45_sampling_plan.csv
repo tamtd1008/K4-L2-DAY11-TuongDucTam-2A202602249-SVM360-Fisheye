@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,L?ch baseline t?ng th?,?anh gia ?? chinh xac n?n t?ng c?a camera tr??c ? ?i?u ki?n anh sang t?t va m?t ?? giao thong tieu chu?n.
+front,hard,20,Choi sang / ?en pha ng??c chi?u,Vung camera tr??c hay b? choi n?ng tr?c ti?p ho?c ?en pha xe ??i di?n lam meo v?ch k? ???ng va v?t th?.
+rear,normal,30,L?ch baseline lui xe,??m b?o quan sat kho?ng tr?ng lui chu?n khi khong co ch??ng ng?i v?t ph?c t?p.
+rear,hard,20,Bi?n d?ng meo goc fisheye / D? ?ng kinh,Camera sau d? bam b?i b?n va ch?u hi?u ?ng fisheye m?nh ? mep d??i ?nh.
+left,normal,30,L?ch baseline ben hong,?anh gia kh? n?ng nh?n di?n ?i?m mu va lan ???ng hong xe tieu chu?n.
+left,hard,20,Vung seam n?i v?i Front/Rear,T? l? ch?ng l?p goc tr??c-trai d? gay trung l?p ho?c gay net v?ch k? ???ng/v?t th?.
+right,normal,30,L?ch baseline ben hong,?anh gia kh? n?ng quan sat l? ???ng va ch??ng ng?i v?t hong ph?i tieu chu?n.
+right,hard,20,Vung seam n?i & bong ram / ?i?m mu,Cac goc ghep seam k?t h?p bong ram c?a chinh than xe lam sai l?ch vung free-space.

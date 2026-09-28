@@ -1,0 +1,9 @@
+round: calib
+slice: C0
+sha256: f1dc356b548e5a22b2078a6fbe6d361b2871d5a89fb83c55c87e1c75fe144b4c
+code: F1DC-356B
+locked_at: 2026-09-28T16:42:38+07:00
+shapes: box=5, polygon=2
+prefill_kept: 0
+prefill_edited: 0
+new: 5

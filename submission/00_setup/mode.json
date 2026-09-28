@@ -1,0 +1,17 @@
+{
+  "members": [
+    "Tuong-Duc-Tam"
+  ],
+  "assignments": {
+    "Tuong-Duc-Tam": "B4-mid"
+  },
+  "self": "Tuong-Duc-Tam",
+  "slice": "B4-mid",
+  "degrade": [],
+  "current_slice": "B4-mid",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": [
+    "adasind_249480.jpg:1"
+  ]
+}

@@ -1,0 +1,9 @@
+round: rework
+slice: B4-mid
+sha256: ceeb2721c0b6c46b58d9670a3b51c0445c43250524498031e3d25ece3b2c0920
+code: CEEB-2721
+locked_at: 2026-09-28T21:26:24+07:00
+shapes: box=13, polygon=9
+prefill_kept: 1
+prefill_edited: 0
+new: 12

@@ -1,18 +1,15 @@
 # Đề xuất gold set theo camera — tình huống giả lập
 
-**Đầu bài:** 50.000 frame từ bốn camera SVM, ngân sách chọn 200 frame để review/gold. Đây là tình huống trên slide,
-**không phải** 50.000 frame có trong repo. Phân bổ đúng 200 ở `45_sampling_plan.csv` cho bốn camera, mỗi camera có
-normal và hard slice. “Gold set” ở đây là **kế hoạch tạo** reference sau kiểm chứng, không phải teaching reference
-ADASIND hoặc nhãn bạn vừa vẽ. Nếu cần, dùng `notebooks/day11-svm360-colab.ipynb` để thử tổng phân bổ; notebook
-không làm thay phần lý do.
+**Đầu bài:** 50.000 frame từ bốn camera SVM, ngân sách chọn 200 frame để review/gold. Đây là tình huống trên slide, **không phải** 50.000 frame có trong repo. Phân bổ đúng 200 ở `45_sampling_plan.csv` cho bốn camera, mỗi camera có normal và hard slice. “Gold set” ở đây là **kế hoạch tạo** reference sau kiểm chứng, không phải teaching reference ADASIND hoặc nhãn bạn vừa vẽ.
 
 | camera_id | Hard case cần chọn | Vì sao dễ sai | Annotation space / calibration cần giữ | Cách review trước khi gọi là gold |
 |---|---|---|---|---|
-| front | TODO | TODO | TODO | TODO |
-| rear | TODO | TODO | TODO | TODO |
-| left | TODO | TODO | TODO | TODO |
-| right | TODO | TODO | TODO | TODO |
+| front | Đèn pha ngược chiều, chói sáng mặt trời, xe khuất một phần ở mép ảnh | Độ tương phản quá cao làm nhầm vạch sơn / free-space; méo fisheye ở góc biên | Giữ nguyên gốc fisheye 2D trước khi rectifying; bảo toàn intrinsic / extrinsic calibration | Cross-check kép giữa 2 annotators cấp cao + đối chiếu mặt đường với BEV synthesis |
+| rear | Bụi bẩn/giọt nước bám ống kính, xe tiến quá sát đít, chói đèn xe sau | Biến dạng góc nhìn lùi cực đại, vật thể sát mép bị che khuất hoặc phóng đại sai tỷ lệ | Giữ nguyên gốc 2D camera không crop; đồng bộ thời gian (timestamp) với cảm biến lùi | Kiểm tra thủ công từng frame có hiệu ứng giọt nước/chói sáng; duyệt qua Senior Reviewer |
+| left | Vật thể cắt qua vùng seam (chồng lấp góc trước-trái / sau-trái) | Dễ bị duplicate bounding box hoặc bị rách/gãy hình khi ghép BEV | Giữ nguyên coord hệ camera đơn lẻ; không vội merge box khi chưa qua camera liền kề | Review đồng thời 2 view cùng lúc (Front-Left hoặc Rear-Left) để xác nhận vật thể duy nhất |
+| right | Bóng râm thân xe, chướng ngại vật thấp sát lề, vùng seam góc phải | Độ sáng chênh lệch lớn giữa vùng nắng/bóng râm; biến dạng mép góc khó nhận diện free-space | Lấy toàn bộ khung hình bao gồm cả viền bánh xe để làm mốc extrinsic calibration | Đánh giá độ phủ free-space trên BEV kết hợp overlay nhãn 2D gốc để phát hiện sai lệch |
 
-- Khi nào cần refresh gold set (đổi camera, calibration hoặc rule): TODO
-- Một ca seam/cross-camera cần policy và evidence trước khi ghép hai box: TODO
-- Vì sao peer agreement hoặc quality report trên ảnh một camera chưa chứng minh gold set đúng cho cả bốn camera: TODO
+- **Khi nào cần refresh gold set (đổi camera, calibration hoặc rule):** Refresh khi có sự thay đổi về vị trí lắp đặt camera (extrinsic), thay đổi ống kính/độ phân giải (intrinsic), thay đổi quy tắc gắn nhãn (ontology/annotation guidelines), hoặc khi phát hiện phân bố dữ liệu thực tế (data drift) thay đổi đáng kể so với tập giả lập ban đầu.
+- **Một ca seam/cross-camera cần policy và evidence trước khi ghép hai box:** Cần quy định rõ ràng: (1) Nếu vật thể xuất hiện ở vùng seam của cả 2 camera, gán ID theo camera có góc nhìn rõ nhất (>60% diện tích vật thể); (2) Bằng chứng (evidence) phải dựa trên phép chiếu homography/calibration giữa 2 camera và dấu mốc thời gian (timestamp) đồng bộ tuyệt đối trước khi tiến hành fusion/merge box.
+- **Người review độc lập và cách giải quyết bất đồng:** Mỗi frame được gán độc lập bởi 2 Lead Annotators. Nếu tỉ lệ IoU < 0.85 hoặc có bất đồng về class/tracking ID, ca đó sẽ được đưa lên QA Master thẩm định cùng tài liệu kiểm tra Calibration 3D/BEV để đưa ra quyết định cuối cùng.
+- **Vì sao peer agreement hoặc quality report trên ảnh một camera chưa chứng minh gold set đúng cho cả bốn camera:** Việc đồng thuận tốt trên một camera đơn lẻ chỉ phản ánh chất lượng nhãn 2D cục bộ (local consistency). Nó hoàn toàn bỏ qua các lỗi liên camera như: lệch calibration (misalignment), trùng lặp nhãn vùng seam (double-counting), hoặc bất đồng bộ không gian 3D/BEV giữa các góc nhìn với nhau.

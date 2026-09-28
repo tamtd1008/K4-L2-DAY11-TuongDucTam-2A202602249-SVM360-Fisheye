@@ -1,0 +1,69 @@
+round: r1_craft
+slice: B4-mid
+sha256: 212b838edb2e123a946d2b0cbb474f46703d80bd8325347e8e3a71a56f9b9287
+code: 212B-838E
+locked_at: 2026-09-28T20:50:45+07:00
+shapes: box=14, polygon=9
+prefill_kept: 1
+prefill_edited: 0
+new: 13
+history:
+  round: r1_craft
+  slice: B4-mid
+  sha256: 06087a76bc8a0cf642da47e53c94ab18612cda506056f52b5fd73b26d3361510
+  code: 0608-7A76
+  locked_at: 2026-09-28T20:21:20+07:00
+  shapes: box=14, polygon=9
+  prefill_kept: 1
+  prefill_edited: 0
+  new: 13
+  history:
+    round: r1_craft
+    slice: B4-mid
+    sha256: 1e8e4bf1f1fb21f3c3561b5de08e9a4107ff6abd2d71f04e01211b29eece19f8
+    code: 1E8E-4BF1
+    locked_at: 2026-09-28T20:18:01+07:00
+    shapes: box=20, polygon=6
+    prefill_kept: 1
+    prefill_edited: 0
+    new: 19
+    history:
+      round: r1_craft
+      slice: B4-mid
+      sha256: 06087a76bc8a0cf642da47e53c94ab18612cda506056f52b5fd73b26d3361510
+      code: 0608-7A76
+      locked_at: 2026-09-28T20:15:25+07:00
+      shapes: box=14, polygon=9
+      prefill_kept: 1
+      prefill_edited: 0
+      new: 13
+      history:
+        round: r1_craft
+        slice: B4-mid
+        sha256: 1e8e4bf1f1fb21f3c3561b5de08e9a4107ff6abd2d71f04e01211b29eece19f8
+        code: 1E8E-4BF1
+        locked_at: 2026-09-28T20:10:54+07:00
+        shapes: box=20, polygon=6
+        prefill_kept: 1
+        prefill_edited: 0
+        new: 19
+        history:
+          round: r1_craft
+          slice: B4-mid
+          sha256: 06087a76bc8a0cf642da47e53c94ab18612cda506056f52b5fd73b26d3361510
+          code: 0608-7A76
+          locked_at: 2026-09-28T18:31:29+07:00
+          shapes: box=14, polygon=9
+          prefill_kept: 1
+          prefill_edited: 0
+          new: 13
+          history:
+            round: r1_craft
+            slice: B4-mid
+            sha256: 2305735257b5eece4e5cc09eec9add9e101dcb5d3d27b6b10e93651a76370a84
+            code: 2305-7352
+            locked_at: 2026-09-28T18:14:40+07:00
+            shapes: box=14, polygon=6
+            prefill_kept: 1
+            prefill_edited: 0
+            new: 13
