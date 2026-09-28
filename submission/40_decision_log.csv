@@ -1,5 +1,5 @@
-decision_id,frame_id,object_ref,issue_type,action,finding_description,status,owner
-1-Dec,adasind_261480,L3,SPURIOUS_BOX,rework,Reference L gan th?a box L3 cho Bike xa/m? khong ??t tieu chu?n,resolved,annotator
-2-Dec,adasind_261480,R5,MISSING_BOX,rework,"Reference L b? sot xe R5 ? l? ???ng, d? ?oan R ?ung",resolved,annotator
-3-Dec,adasind_265065,R7,AMBIGUOUS_EDGE,escalate,"??i t??ng R7 m? ? ria; ch?a ro la thi?u sot hay ignore region, c?n ki?m tra quy chu?n v?i QA",escalated,qa
-4-Dec,adasind_249480,M2,MODEL_DOMAIN_NOISE,keep_with_reason,Model M d? ?oan th?a box M2 t?i vung xam/nhi?u do meo fisheye,resolved,ai_team
+﻿decision_id,frame_id,object_ref,issue_type,action,finding_description,status,owner
+1-Dec,adasind_261480,L3,SPURIOUS_BOX,rework,Reference L gán thừa box L3 cho Bike xa/mờ không đạt tiêu chuẩn,resolved,annotator
+2-Dec,adasind_261480,R5,MISSING_BOX,rework,"Reference L bị sót xe R5 ở lề đường, dự đoán R đúng",resolved,annotator
+3-Dec,adasind_265065,R7,AMBIGUOUS_EDGE,escalate,"Đối tượng R7 mờ ở rìa; chưa rõ là thiếu sót hay ignore region, cần kiểm tra quy chuẩn với QA",escalated,qa
+4-Dec,adasind_249480,M2,MODEL_DOMAIN_NOISE,keep_with_reason,Model M dự đoán thừa box M2 tại vùng xám/nhiễu do méo fisheye,resolved,ai_team

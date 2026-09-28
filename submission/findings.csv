@@ -1,41 +1,41 @@
-round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
-calib,C0,adasind_019560.jpg,L5,na,SPURIOUS,Model t? ??ng d? ?oan th?a box ? vung nhi?u bong ram/n?n ???ng khong ch?a v?t th? th?t,major,annotator,R01,prelabel_extra,delete,v1.0,Xoa box th?a L5 do gan sai bong ram thanh v?t th?
-calib,C0,adasind_019560.jpg,R5,na,MISSING,B? sot xe hai banh/ng??i lai b? che khu?t m?t ph?n ? xa goc ph?i khung hinh,critical,reviewer,R03,prelabel_missing,add,v1.0,B? sung box R5 cho Bike theo quy chu?n R03
-calib,C0,adasind_019560.jpg,R6,na,MISSING,B? sot ng??i ?i b? ??ng g?n mep l? ???ng goc ph?i do ?? t??ng ph?n th?p,major,reviewer,R02,prelabel_missing,add,v1.0,B? sung box R6 cho Pedestrian theo quy chu?n R02
-r2_qa,B4-mid,adasind_249480,L1,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_249480,L2,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_261480,L1,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_261480,L2,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_261480,L3,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_261480,L4,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_261480,L5,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_261480,L6,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_265065,L1,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_265065,L2,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_265065,L3,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_265065,L4,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_265065,L5,L_only,Ch? co nhan L,,,,L_only,,,v1,
-r2_qa,B4-mid,adasind_265065,L6,L_only,Ch? co nhan L,,,,L_only,,,v1,
+﻿round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
+r1_craft,C0,adasind_019560.jpg,L5,na,SPURIOUS,E4_model_domain,P1,ai_team,R01,prelabel_extra,keep_with_reason,v1.0,Xóa box thừa L5 do gán sai bóng râm thành vật thể
+r1_craft,C0,adasind_019560.jpg,R5,na,MISSING,E0_reference_defect,P1,annotator,R03,prelabel_missing,rework,v1.0,Bổ sung box R5 cho Bike theo quy chuẩn R03
+r1_craft,C0,adasind_019560.jpg,R6,na,MISSING,E0_reference_defect,P1,annotator,R02,prelabel_missing,rework,v1.0,Bổ sung box R6 cho Pedestrian theo quy chuẩn R02
+r2_qa,B4-mid,adasind_249480,L1,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_249480,L2,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_261480,L1,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_261480,L2,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_261480,L3,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_261480,L4,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_261480,L5,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_261480,L6,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_265065,L1,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_265065,L2,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_265065,L3,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_265065,L4,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_265065,L5,L_only,MISSING,,,,L_only,,,v1,
+r2_qa,B4-mid,adasind_265065,L6,L_only,MISSING,,,,L_only,,,v1,
 r1_craft,B4-mid,adasind_261480.jpg,L3,na,SPURIOUS,,,,,,,,
 r1_craft,B4-mid,adasind_261480.jpg,R5,na,MISSING,,,,,,,,
 r1_craft,B4-mid,adasind_261480.jpg,R6,na,MISSING,,,,,,,,
 r1_craft,B4-mid,adasind_265065.jpg,R5,na,MISSING,,,,,,,,
 r1_craft,B4-mid,adasind_265065.jpg,R7,na,MISSING,,,,,,,,
-r3_diag,B4-mid,adasind_249480.jpg,M2,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model d? ?oan th?a box M2 t?i vung xam/nhi?u ? mid zone
-r3_diag,B4-mid,adasind_249480.jpg,M4,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model d? ?oan th?a box M4 do nhi?u bong ram
-r3_diag,B4-mid,adasind_249480.jpg,M6,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model nhi?u n?n ???ng d? ?oan nh?m box M6
-r3_diag,B4-mid,adasind_261480.jpg,L5+R4,LR_noM,MISSING,E4_model_domain,P1,ai_team,LR_noM,model_compare,keep_with_reason,v1,Model M b? sot ??i t??ng ThreeWheeler x?n ma L/R ??u th?y
-r3_diag,B4-mid,adasind_261480.jpg,L3,L_only,SPURIOUS,E0_reference_defect,P1,annotator,L_only,compare_html,rework,v1,Reference L g?n th?a box L3 (Bike xa/m? khong ??t tieu chu?n)
-r3_diag,B4-mid,adasind_261480.jpg,R5,R_only,MISSING,E0_reference_defect,P1,annotator,R_only,compare_html,rework,v1,"Reference L b? sot xe R5 ? l? ???ng, R d? ?oan ?ung"
-r3_diag,B4-mid,adasind_261480.jpg,R6,R_only,MISSING,E0_reference_defect,P1,annotator,R_only,compare_html,rework,v1,"Reference L b? sot ng??i ?i b? R6, R d? ?oan ?ung"
-r3_diag,B4-mid,adasind_261480.jpg,M2,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nh?n di?n gi? box M2
-r3_diag,B4-mid,adasind_261480.jpg,M5,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nhi?u gi? l?p box M5
-r3_diag,B4-mid,adasind_261480.jpg,M6,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nh?n di?n th?a box M6
-r3_diag,B4-mid,adasind_261480.jpg,M8,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nh?n di?n th?a box M8
-r3_diag,B4-mid,adasind_261480.jpg,M10,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M b? false positive t?i M10
-r3_diag,B4-mid,adasind_261480.jpg,M11,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nh?n di?n sai n?n ???ng thanh M11
-r3_diag,B4-mid,adasind_261480.jpg,M12,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M phat hi?n gi? M12
-r3_diag,B4-mid,adasind_261480.jpg,M13,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M phat hi?n gi? M13
-r3_diag,B4-mid,adasind_265065.jpg,R5+M7,RM_noL,MISSING,E0_reference_defect,P1,annotator,RM_noL,compare_html,rework,v1,Reference L b? sot Pedestrian R5/M7 ro rang ? mep ph?i
-r3_diag,B4-mid,adasind_265065.jpg,R7,R_only,MISSING,E5_unresolved,P2,qa,R_only,local_quality,escalate,v1,"??i t??ng m? ? ria; ch?a ro la thi?u sot hay ignore region, c?n ki?m tra l?i quy chu?n v?i QA"
-r3_diag,B4-mid,adasind_265065.jpg,M8,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M d? ?oan th?a M8 do bong cay goc ???ng
+r3_diag,B4-mid,adasind_249480.jpg,M2,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model dự đoán thừa box M2 tại vùng xám/nhiễu ở mid zone
+r3_diag,B4-mid,adasind_249480.jpg,M4,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model dự đoán thừa box M4 do nhiễu bóng râm
+r3_diag,B4-mid,adasind_249480.jpg,M6,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model nhiễu nền đường dự đoán nhầm box M6
+r3_diag,B4-mid,adasind_261480.jpg,L5+R4,LR_noM,MISSING,E4_model_domain,P1,ai_team,LR_noM,model_compare,keep_with_reason,v1,Model M bị sót đối tượng ThreeWheeler xịn mà L/R đều thấy
+r3_diag,B4-mid,adasind_261480.jpg,L3,L_only,SPURIOUS,E0_reference_defect,P1,annotator,L_only,compare_html,rework,v1,Reference L gán thừa box L3 (Bike xa/mờ không đạt tiêu chuẩn)
+r3_diag,B4-mid,adasind_261480.jpg,R5,R_only,MISSING,E0_reference_defect,P1,annotator,R_only,compare_html,rework,v1,"Reference L bị sót xe R5 ở lề đường, R dự đoán đúng"
+r3_diag,B4-mid,adasind_261480.jpg,R6,R_only,MISSING,E0_reference_defect,P1,annotator,R_only,compare_html,rework,v1,"Reference L bị sót người đi bộ R6, R dự đoán đúng"
+r3_diag,B4-mid,adasind_261480.jpg,M2,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nhận diện giả box M2
+r3_diag,B4-mid,adasind_261480.jpg,M5,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nhiễu giả lập box M5
+r3_diag,B4-mid,adasind_261480.jpg,M6,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nhận diện thừa box M6
+r3_diag,B4-mid,adasind_261480.jpg,M8,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nhận diện thừa box M8
+r3_diag,B4-mid,adasind_261480.jpg,M10,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M bị false positive tại M10
+r3_diag,B4-mid,adasind_261480.jpg,M11,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M nhận diện sai nền đường thành M11
+r3_diag,B4-mid,adasind_261480.jpg,M12,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M phát hiện giả M12
+r3_diag,B4-mid,adasind_261480.jpg,M13,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M phát hiện giả M13
+r3_diag,B4-mid,adasind_265065.jpg,R5+M7,RM_noL,MISSING,E0_reference_defect,P1,annotator,RM_noL,compare_html,rework,v1,Reference L bị sót Pedestrian R5/M7 rõ ràng ở mép phải
+r3_diag,B4-mid,adasind_265065.jpg,R7,R_only,MISSING,E5_unresolved,P2,qa,R_only,local_quality,escalate,v1,"Đối tượng mờ ở rìa; chưa rõ là thiếu sót hay ignore region, cần kiểm tra lại quy chuẩn với QA"
+r3_diag,B4-mid,adasind_265065.jpg,M8,M_only,SPURIOUS,E4_model_domain,P1,ai_team,M_only,iou_sweep,keep_with_reason,v1,Model M dự đoán thừa M8 do bóng cây góc đường
